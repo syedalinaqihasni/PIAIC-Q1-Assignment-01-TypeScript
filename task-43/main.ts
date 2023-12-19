@@ -1,0 +1,15 @@
+// 43. Unchanged Magicians: Start with your work from Exercise 40. Call the function make_great() with a copy of the array of magicians’ names. Because the original array will be unchanged, return the new array and store it in a separate array. Call show_magicians() with each array to show that you have one array of the original names and one array with the Great added to each magician’s name.
+
+// Function to summarize a sandwich order
+function order_sandwich(...items: string[]): void {
+  console.log('Sandwich Summary:');
+  for (let item of items) {
+    console.log(`- ${item}`);
+  }
+  console.log('Enjoy your sandwich!');
+}
+
+// Call the function with different numbers of arguments
+order_sandwich('Ham', 'Cheese', 'Lettuce');
+order_sandwich('Turkey', 'Tomato');
+order_sandwich('Peanut Butter', 'Jelly', 'Bread');
